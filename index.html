@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover the most important missions to outer space.">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" type="image/x-icon" href="images/icons/favicon-64.png">
+  <link rel="apple-touch-icon" href="images/icons/apple-touch180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link defer href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/CustomEase.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Draggable.min.js" defer></script>
+  <script src="script.js" defer></script>
+  <title>Space Missions - Discover the most important missions to outer space.</title>
+</head>
+<body>
+  <div class="planet">
+    <img 
+    src="images/planets/earth700.webp"
+    srcset="images/planets/earth700.webp 700w, images/planets/earth1500ll.webp 1500w" 
+    sizes="(max-width: 425px) 100vw, (max-width: 900px) 100vw"
+    alt="earth"
+    class="earth">
+    
+  </div>
+  <header>
+    <div class="scroll"></div>
+    <section class="menu">
+      <ul class="menu__items">
+        <li>
+          <a class="menu__items--earth menu-item" href="#">Beyond the Solar System</a>
+          <a class="mobile__earth mobile-item" href="#"><img style="width: 2rem" src="images/menu/earth60.webp" alt="earth"></a>
+        </li>
+        <li>
+          <a class="menu__items--moon menu-item" href="#">Missions to the Moon</a>
+          <a class="mobile__moon mobile-item" href="#"><img style="width: 2rem" src="images/menu/moon60.webp" alt="moon"></a>
+        </li>
+        <li>
+          <a class="menu__items--mars menu-item" href="#">Missions to Mars</a>
+          <a class="mobile__mars mobile-item" href="#"><img style="width: 2rem" src="images/menu/mars60.webp" alt="mars"></a>
+        </li>
+        <li>
+          <a class="menu__items--missions" href="#">Space Exploration</a>
+        </li>
+        <li><a class="menu__items--gallery" href="#">Gallery</a></li>
+      </ul>
+    </section>
+  </header>
+  <main>
+    <div class="hero">
+      <section class="info">
+        <div class="info__satelite" data-value="1">
+          <div class="info__heading">Hubble Space Telescope</div>
+          <div class="info__text"></div>
+        </div>
+        <div class="info__navigation">
+          <div data-value="1" class="info__navigation--item">
+            <div class="outline 1"></div>
+          </div>
+          <div data-value="2" class="info__navigation--item">
+            <div class="outline 2"></div>
+          </div>
+          <div data-value="3" class="info__navigation--item">
+            <div class="outline 3"></div>
+          </div>
+          <div data-value="4" class="info__navigation--item">
+            <div class="outline 4"></div>
+          </div>
+        </div>
+      </section>
+      <section class="satelites">
+        <div data-value="1" class="satelite satelites__satelite--1">
+          <img class="satelite__image image1" src="images/satelites/earth/1.webp" alt="Hubble Space Telescope" />
+        </div>
+      </section>
+    </div>
+    <section id="explorations">
+      <h1>Space Exploration Timeline</h1>
+      <section class="explorations">
+        <div class="timeline__center-line"></div>
+        <figure class="exploration-container--left">
+          <div class="explorations__image">
+              <img data-src="images/timeline/Sputnik500.webp" src="images/timeline/placeholder.webp" alt="sputnik satelite"
+              />
+          </div>
+          <figcaption class="explorations__text">
+            October 4 - The Soviet Union successfully launched Sputnik, the
+            first artificial satelite, into the Earth's orbit. The event marked
+            the start of the space age and the US - USSR space race.
+          </figcaption>
+          <div class="year">1957</div>
+        </figure>
+        <div class="empty"></div>
+        <div></div>
+        <figure class="exploration-container--right">
+          <div class="explorations__image">
+            <img src="images/timeline/placeholder.webp" data-src="images/timeline/yuri500.webp" alt="Yuri Gagarin" />
+          </div>
+          <figcaption class="explorations__text">
+            12 April - Yuri Alekseyevich Gagarin was a Soviet pilot and
+            cosmonaut who became the first human to journey into outer space.
+          </figcaption>
+          <div class="year">1961</div>
+        </figure>
+        <div class="empty"></div>
+        <div></div>
+        <figure class="exploration-container--left">
+          <div class="explorations__image">
+            <img data-src="images/timeline/moonlanding500.webp"  src="images/timeline/placeholder.webp" alt="Moon landing" />
+          </div>
+          <figcaption class="explorations__text">
+            20 July - First human to leave his footprints on another world, and
+            first space launch from a celestial body other than the Earth.
+          </figcaption>
+          <div class="year">1969</div>
+        </figure>
+        <div class="empty"></div>
+        <div></div>
+        <figure class="exploration-container--right">
+          <div class="explorations__image">
+            <img data-src="images/timeline/marslanding500.webp"  src="images/timeline/placeholder.webp" alt="Mars 3 lander" />
+          </div>
+          <figcaption class="explorations__text">
+            December 2 - The Mars 3 lander became the first probe to
+            successfully soft-land on Mars.
+          </figcaption>
+          <div class="year">1971</div>
+        </figure>
+        <div class="empty"></div>
+        <div></div>
+        <figure class="exploration-container--left">
+          <div class="explorations__image">
+            <img data-src="images/timeline/columbia500.webp"  src="images/timeline/placeholder.webp" alt="spacecraft Columbia" />
+          </div>
+          <figcaption class="explorations__text">
+            April 12–14 - First reusable spacecraft (Columbia) to be launched
+            and returned from space.
+          </figcaption>
+          <div class="year">1981</div>
+        </figure>
+        <div class="empty"></div>
+        <div></div>
+        <figure class="exploration-container--right">
+          <div class="explorations__image">
+            <img data-src="images/timeline/untethered500.webp"  src="images/timeline/placeholder.webp" alt="Astronaut in space untethered" />
+          </div>
+          <figcaption class="explorations__text">
+            7 February - First untethered spacewalk by Bruce McCandless II,
+            venturing more than 90 meters from Challenger.
+          </figcaption>
+          <div class="year">1984</div>
+        </figure>
+        <div class="empty"></div>
+        <div></div>
+        <figure class="exploration-container--left">
+          <div class="explorations__image">
+            <img data-src="images/timeline/challenger500.webp"  src="images/timeline/placeholder.webp" alt="Explosion of the Challenger spacecraft" />
+          </div>
+          <figcaption class="explorations__text">
+            28 January - First major American space loss, the Space Shuttle
+            Challenger disaster.
+          </figcaption>
+          <div class="year">1986</div>
+        </figure>
+        <div class="empty"></div>
+        <div></div>
+        <figure class="exploration-container--right">
+          <div class="explorations__image">
+            <img data-src="images/timeline/iss500.webp"  src="images/timeline/placeholder.webp" alt="International space station" />
+          </div>
+          <figcaption class="explorations__text">
+            The first ISS component was launched in 1998, and the first
+            long-term residents arrived on 2 November 2000.
+          </figcaption>
+          <div class="year">1998</div>
+        </figure>
+        <div class="empty"></div>
+        <div></div>
+        <figure class="exploration-container--left">
+          <div class="explorations__image">
+            <img data-src="images/timeline/pluto500.webp"  src="images/timeline/placeholder.webp" alt="Planet Pluto" />
+          </div>
+          <figcaption class="explorations__text">
+            July 14 - New Horizons was the first spacecraft to fly by Pluto and
+            provided the first high quality photos of the dwarf planet.
+          </figcaption>
+          <div class="year">2015</div>
+        </figure>
+        <div class="empty"></div>
+        <div></div>
+        <figure class="exploration-container--right">
+          <div class="explorations__image">
+            <img data-src="images/timeline/blackhole500.webp"  src="images/timeline/placeholder.webp" alt="First image of a black hole" />
+          </div>
+          <figcaption class="explorations__text">
+            10 April - First direct photograph of a black hole and its vicinity,
+            confirming Einstein's theory of general relativity.
+          </figcaption>
+          <div class="year">2019</div>
+        </figure>
+        <div class="empty"></div>
+        <div></div>
+        <figure class="exploration-container--left">
+          <div class="explorations__image">
+            <img data-src="images/timeline/dart500.webp"  src="images/timeline/placeholder.webp" alt="Asteroid" />
+          </div>
+          <figcaption class="explorations__text">
+            26 September - First attempt to deflect an asteroid and change
+            it's path. The impact successfully altered the asteroid's orbit.
+          </figcaption>
+          <div class="year">2022</div>
+        </figure>
+      </section>
+      <section class="gallery">
+        <h1 class="gallery__heading">James Webb Telescope's Latest Images</h1>
+        <div class="gallery__container">
+          <div class="gallery__container--image">
+            <img 
+            src="images/gallery/L1527-and-Protostar300.webp" 
+            loading="lazy" 
+            alt="L1527 and Protostar"
+            srcset="images/gallery/L1527-and-Protostar900.webp 900w, 
+                    images/gallery/L1527-and-Protostar300.webp 300w "
+            sizes="(max-width: 425px) 80vw, 900px"
+            >
+
+            <div class="image__text">L1527 and Protostar</div>
+          </div>
+          <div class="gallery__container--image">
+            <img 
+            src="images/gallery/pillars900.webp" 
+            srcset="images/gallery/pillars300.webp 300w, 
+                    images/gallery/pillars900.webp 900w "
+            sizes="(max-width: 425px) 80vw, 900px"
+            loading="lazy" alt="Pillars of Creation">
+            <div class="image__text">Pillars of Creation</div>
+          </div>
+          <div class="gallery__container--image">
+            <img src="images/gallery/cliffs900.webp" 
+            srcset="images/gallery/cliffs300.webp 300w, 
+            images/gallery/cliffs900.webp 900w "
+            loading="lazy" alt="Cosmic Cliffs in the Carina Nebula">
+            <div class="image__text">Cosmic Cliffs in the Carina Nebula</div>
+          </div>
+          <div class="gallery__container--image">
+            <img src="images/gallery/interacting-galaxies900.webp" 
+            srcset="images/gallery/interacting-galaxies300.webp 300w, 
+            images/gallery/interacting-galaxies900.webp 900w "
+            loading="lazy" alt="Interacting Galaxies VV 191">
+            <div class="image__text">Interacting Galaxies VV 191</div>
+          </div>
+          <div class="gallery__container--image">
+            <img src="images/gallery/ring900.webp" 
+            srcset="images/gallery/ring300.webp 300w, 
+            images/gallery/ring900.webp 900w "
+            loading="lazy" alt="Southern Ring Nebula">
+            <div class="image__text">Southern Ring Nebula (NIRCam vs MIRI)</div>
+          </div>
+          <div class="gallery__container--image">
+            <img src="images/gallery/tarantula900.webp" 
+            srcset="images/gallery/tarantula300.webp 300w, 
+            images/gallery/tarantula900.webp 900w "
+            loading="lazy" alt="Tarantula Nebula">
+            <div class="image__text">Tarantula Nebula</div>
+          </div>
+          <div class="gallery__container--image">
+            <img src="images/gallery/deep-field900.webp" 
+            srcset="images/gallery/deep-field300.webp 300w, 
+            images/gallery/deep-field900.webp 900w "
+            loading="lazy" alt="Deep Field">
+            <div class="image__text">Deep Field</div>
+          </div>
+          <div class="gallery__container--image">
+            <img src="images/gallery/quintet900.webp" 
+            srcset="images/gallery/quintet300.webp 300w, 
+            images/gallery/quintet900.webp 900w "
+            loading="lazy" alt="Stephan's Quintet">
+            <div class="image__text">Stephan's Quintet</div>
+          </div>
+          <div class="gallery__container--image">
+            <img src="images/gallery/neptune900.webp" 
+            srcset="images/gallery/neptune300.webp 300w, 
+            images/gallery/neptune900.webp 900w" loading="lazy" alt="Planet Neptune">
+            <div class="image__text">Neptune</div>
+          </div>
+        </div>
+      </section>
+      <div>
+        <svg class="to-top" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </div>
+  </main>
+  <section class="background">
+    <img class="background__front" src="images/background/background-front.webp" loading="lazy" alt="background"/>
+    <img class="background__back" src="images/background/background-back.webp" loading="lazy" alt="background" />
+  </section>
+</body>
+</html>

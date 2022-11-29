@@ -1,0 +1,61 @@
+.explorations {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 40rem;
+  &__image {
+    @include flex-center;
+    margin: 0 3rem;
+    img {
+      width: 70%;
+    }
+  }
+  &__text {
+    max-width: 50rem; 
+    margin-top: 3rem;
+    text-align: center;
+    margin: 2rem auto;
+    opacity: 0;
+  }
+  .timeline__center-line {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #aaa;
+    z-index: -10;
+  }
+  .exploration-container--left {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10rem;
+    .year {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      opacity: 0;
+      transform: translate(50%, -100%);
+      background-color: #333;
+      padding: 1rem 3rem;
+    }
+  }
+  .exploration-container--right {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10rem;
+    .year {
+      top: 50%;
+      position: absolute;
+      left: 0;
+      opacity: 0;
+      transform: translate(-50%, -100%);
+      background-color: #333;
+      padding: 1rem 3rem;
+    }
+  }
+}
+
+
+

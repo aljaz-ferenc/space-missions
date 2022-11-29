@@ -1,0 +1,14 @@
+{
+  "name": "spacemissions",
+  "version": "1.0.0",
+  "description": "Discover some of the most impressive exploration missions of the human kind.",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style.css -w"
+  },
+  "author": "Aljaž Ferenc",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
