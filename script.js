@@ -155,7 +155,7 @@ function manageState() {
     })
 
     window.addEventListener('keydown', (e) => {
-        console.log(e.key)
+        if(e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return
         if (e.key === 'ArrowRight' && currentState < 4) {
             currentState++
             showInfo()

@@ -403,4 +403,5 @@ body::-webkit-scrollbar-thumb, .gallery__container::-webkit-scrollbar-thumb {
 @media only screen and (max-width: 420px) {
   .menu__items {
     width: 95% !important;
-    gap: 1rem; } }
+    gap: 1rem;
+    margin-top: 2rem; } }
