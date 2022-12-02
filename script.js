@@ -340,7 +340,7 @@ function shootingStar() {
 setInterval(shootingStar, 10000);
 
 
-//Timeline animations with lazy loading
+//Timeline animations 
 function animateCards() {
     cardsLeft.forEach(card => {
         gsap.from(card, {
@@ -352,10 +352,6 @@ function animateCards() {
                 trigger: card,
                 start: 'top 70%',
             },
-            onStart: () => {
-                let src = card.querySelector('img').dataset.src
-                card.querySelector('img').setAttribute('src', src) 
-        },
             onComplete: () => animateText(card)
         })
     })
@@ -369,10 +365,6 @@ function animateCards() {
             scrollTrigger: {
                 trigger: card,
                 start: 'top 70%',
-            },
-            onStart: () => {
-                let src = card.querySelector('img').dataset.src
-                card.querySelector('img').setAttribute('src', src) 
             },
             onComplete: () => animateText(card)
         })

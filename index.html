@@ -10,7 +10,7 @@
   <link rel="icon" type="image/x-icon" href="images/icons/favicon-64.png">
   <link rel="apple-touch-icon" href="images/icons/apple-touch180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link defer href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/CustomEase.min.js" defer></script>
@@ -87,8 +87,10 @@
         <div class="timeline__center-line"></div>
         <figure class="exploration-container--left">
           <div class="explorations__image">
-              <img data-src="images/timeline/Sputnik500.webp" src="images/timeline/placeholder.webp" alt="sputnik satelite"
-              />
+            <picture>
+              <source media="(max-width:420px)" srcset="images/timeline/Sputnik250.webp">
+              <img src="images/timeline/Sputnik500.webp" alt="">
+            </picture>
           </div>
           <figcaption class="explorations__text">
             October 4 - The Soviet Union successfully launched Sputnik, the
@@ -101,7 +103,10 @@
         <div></div>
         <figure class="exploration-container--right">
           <div class="explorations__image">
-            <img src="images/timeline/placeholder.webp" data-src="images/timeline/yuri500.webp" alt="Yuri Gagarin" />
+            <picture>
+            <source media="(max-width:420px)" srcset="images/timeline/yuri250.webp">
+            <img src="images/timeline/yuri500.webp" alt="">
+          </picture>
           </div>
           <figcaption class="explorations__text">
             12 April - Yuri Alekseyevich Gagarin was a Soviet pilot and
@@ -113,7 +118,10 @@
         <div></div>
         <figure class="exploration-container--left">
           <div class="explorations__image">
-            <img data-src="images/timeline/moonlanding500.webp"  src="images/timeline/placeholder.webp" alt="Moon landing" />
+            <picture>
+              <source media="(max-width:420px)" srcset="images/timeline/moonlanding250.webp">
+              <img src="images/timeline/moonlanding500.webp" alt="">
+            </picture>
           </div>
           <figcaption class="explorations__text">
             20 July - First human to leave his footprints on another world, and
@@ -125,7 +133,10 @@
         <div></div>
         <figure class="exploration-container--right">
           <div class="explorations__image">
-            <img data-src="images/timeline/marslanding500.webp"  src="images/timeline/placeholder.webp" alt="Mars 3 lander" />
+            <picture>
+              <source media="(max-width:420px)" srcset="images/timeline/marslanding250.webp">
+              <img src="images/timeline/marslanding500.webp" alt="">
+            </picture>
           </div>
           <figcaption class="explorations__text">
             December 2 - The Mars 3 lander became the first probe to
@@ -137,7 +148,10 @@
         <div></div>
         <figure class="exploration-container--left">
           <div class="explorations__image">
-            <img data-src="images/timeline/columbia500.webp"  src="images/timeline/placeholder.webp" alt="spacecraft Columbia" />
+            <picture>
+              <source media="(max-width:420px)" srcset="images/timeline/columbia250.webp">
+              <img src="images/timeline/columbia500.webp" alt="">
+            </picture>
           </div>
           <figcaption class="explorations__text">
             April 12–14 - First reusable spacecraft (Columbia) to be launched
@@ -149,7 +163,10 @@
         <div></div>
         <figure class="exploration-container--right">
           <div class="explorations__image">
-            <img data-src="images/timeline/untethered500.webp"  src="images/timeline/placeholder.webp" alt="Astronaut in space untethered" />
+            <picture>
+              <source media="(max-width:420px)" srcset="images/timeline/untethered250.webp">
+              <img src="images/timeline/untethered500.webp" alt="">
+            </picture>
           </div>
           <figcaption class="explorations__text">
             7 February - First untethered spacewalk by Bruce McCandless II,
@@ -161,7 +178,10 @@
         <div></div>
         <figure class="exploration-container--left">
           <div class="explorations__image">
-            <img data-src="images/timeline/challenger500.webp"  src="images/timeline/placeholder.webp" alt="Explosion of the Challenger spacecraft" />
+            <picture>
+              <source media="(max-width:420px)" srcset="images/timeline/challenger250.webp">
+              <img src="images/timeline/challenger500.webp" alt="">
+            </picture>
           </div>
           <figcaption class="explorations__text">
             28 January - First major American space loss, the Space Shuttle
@@ -173,7 +193,10 @@
         <div></div>
         <figure class="exploration-container--right">
           <div class="explorations__image">
-            <img data-src="images/timeline/iss500.webp"  src="images/timeline/placeholder.webp" alt="International space station" />
+            <picture>
+              <source media="(max-width:420px)" srcset="images/timeline/iss250.webp">
+              <img src="images/timeline/iss500.webp" alt="">
+            </picture>
           </div>
           <figcaption class="explorations__text">
             The first ISS component was launched in 1998, and the first
@@ -185,7 +208,10 @@
         <div></div>
         <figure class="exploration-container--left">
           <div class="explorations__image">
-            <img data-src="images/timeline/pluto500.webp"  src="images/timeline/placeholder.webp" alt="Planet Pluto" />
+            <picture>
+              <source media="(max-width:420px)" srcset="images/timeline/pluto250.webp">
+              <img src="images/timeline/pluto500.webp" alt="">
+            </picture>
           </div>
           <figcaption class="explorations__text">
             July 14 - New Horizons was the first spacecraft to fly by Pluto and
@@ -197,7 +223,10 @@
         <div></div>
         <figure class="exploration-container--right">
           <div class="explorations__image">
-            <img data-src="images/timeline/blackhole500.webp"  src="images/timeline/placeholder.webp" alt="First image of a black hole" />
+            <picture>
+              <source media="(max-width:420px)" srcset="images/timeline/blackhole250.webp">
+              <img src="images/timeline/blackhole500.webp" alt="">
+            </picture>
           </div>
           <figcaption class="explorations__text">
             10 April - First direct photograph of a black hole and its vicinity,
@@ -209,7 +238,10 @@
         <div></div>
         <figure class="exploration-container--left">
           <div class="explorations__image">
-            <img data-src="images/timeline/dart500.webp"  src="images/timeline/placeholder.webp" alt="Asteroid" />
+            <picture>
+              <source media="(max-width:420px)" srcset="images/timeline/dart250.webp">
+              <img src="images/timeline/dart500.webp" alt="">
+            </picture>
           </div>
           <figcaption class="explorations__text">
             26 September - First attempt to deflect an asteroid and change
@@ -222,72 +254,150 @@
         <h1 class="gallery__heading">James Webb Telescope's Latest Images</h1>
         <div class="gallery__container">
           <div class="gallery__container--image">
-            <img 
-            src="images/gallery/L1527-and-Protostar300.webp" 
-            loading="lazy" 
-            alt="L1527 and Protostar"
-            srcset="images/gallery/L1527-and-Protostar900.webp 900w, 
-                    images/gallery/L1527-and-Protostar300.webp 300w "
-            sizes="(max-width: 425px) 80vw, 900px"
-            >
-
+            <picture>
+              <source 
+                media="(max-width: 300)" 
+                srcset="./images/gallery/L1527-and-Protostar300.webp">
+              <img src="./images/gallery/L1527-and-Protostar900.webp" alt="L1527 and Protostar">
+            </picture>
             <div class="image__text">L1527 and Protostar</div>
           </div>
           <div class="gallery__container--image">
-            <img 
-            src="images/gallery/pillars900.webp" 
-            srcset="images/gallery/pillars300.webp 300w, 
-                    images/gallery/pillars900.webp 900w "
-            sizes="(max-width: 425px) 80vw, 900px"
-            loading="lazy" alt="Pillars of Creation">
+            <picture>
+              <source
+                media="(max-width:600px)"
+                srcset="images/gallery/pillars300.webp"
+              />
+              <source
+                media="(max-width:1800px)"
+                srcset="images/gallery/pillars900.webp"
+              />
+              <img
+                src="images/gallery/pillars900.webp"
+                alt="Pillars of Creation"
+              />
+            </picture>
             <div class="image__text">Pillars of Creation</div>
           </div>
           <div class="gallery__container--image">
-            <img src="images/gallery/cliffs900.webp" 
-            srcset="images/gallery/cliffs300.webp 300w, 
-            images/gallery/cliffs900.webp 900w "
-            loading="lazy" alt="Cosmic Cliffs in the Carina Nebula">
+            <picture>
+              <source
+                media="(max-width:600px)"
+                srcset="images/gallery/cliffs300.webp"
+              />
+              <source
+                media="(max-width:1800px)"
+                srcset="images/gallery/cliffs900.webp"
+              />
+              <img
+                src="images/gallery/cliffs900.webp"
+                alt="Pillars of Creation"
+              />
+            </picture>         
             <div class="image__text">Cosmic Cliffs in the Carina Nebula</div>
           </div>
           <div class="gallery__container--image">
-            <img src="images/gallery/interacting-galaxies900.webp" 
-            srcset="images/gallery/interacting-galaxies300.webp 300w, 
-            images/gallery/interacting-galaxies900.webp 900w "
-            loading="lazy" alt="Interacting Galaxies VV 191">
+
+            <picture>
+              <source
+                media="(max-width:600px)"
+                srcset="images/gallery/interacting-galaxies300.webp"
+              />
+              <source
+                media="(max-width:1800px)"
+                srcset="images/gallery/interacting-galaxies900.webp"
+              />
+              <img
+                src="images/gallery/interacting-galaxies900.webp"
+                alt="Pillars of Creation"
+              />
+            </picture>           
             <div class="image__text">Interacting Galaxies VV 191</div>
           </div>
           <div class="gallery__container--image">
-            <img src="images/gallery/ring900.webp" 
-            srcset="images/gallery/ring300.webp 300w, 
-            images/gallery/ring900.webp 900w "
-            loading="lazy" alt="Southern Ring Nebula">
+            <picture>
+              <source
+                media="(max-width:600px)"
+                srcset="images/gallery/ring300.webp"
+              />
+              <source
+                media="(max-width:1800px)"
+                srcset="images/gallery/ring900.webp"
+              />
+              <img
+                src="images/gallery/ring900.webp"
+                alt="Pillars of Creation"
+              />
+            </picture>           
             <div class="image__text">Southern Ring Nebula (NIRCam vs MIRI)</div>
           </div>
           <div class="gallery__container--image">
-            <img src="images/gallery/tarantula900.webp" 
-            srcset="images/gallery/tarantula300.webp 300w, 
-            images/gallery/tarantula900.webp 900w "
-            loading="lazy" alt="Tarantula Nebula">
+            <picture>
+              <source
+                media="(max-width:600px)"
+                srcset="images/gallery/tarantula300.webp"
+              />
+              <source
+                media="(max-width:1800px)"
+                srcset="images/gallery/tarantula900.webp"
+              />
+              <img
+                src="images/gallery/tarantula900.webp"
+                alt="Pillars of Creation"
+              />
+            </picture>        
             <div class="image__text">Tarantula Nebula</div>
           </div>
           <div class="gallery__container--image">
-            <img src="images/gallery/deep-field900.webp" 
-            srcset="images/gallery/deep-field300.webp 300w, 
-            images/gallery/deep-field900.webp 900w "
-            loading="lazy" alt="Deep Field">
+            <picture>
+              <source
+                media="(max-width:600px)"
+                srcset="images/gallery/deep-field300.webp"
+              />
+              <source
+                media="(max-width:1800px)"
+                srcset="images/gallery/deep-field900.webp"
+              />
+              <img
+                src="images/gallery/deep-field900.webp"
+                alt="Pillars of Creation"
+              />
+            </picture>          
             <div class="image__text">Deep Field</div>
           </div>
           <div class="gallery__container--image">
-            <img src="images/gallery/quintet900.webp" 
-            srcset="images/gallery/quintet300.webp 300w, 
-            images/gallery/quintet900.webp 900w "
-            loading="lazy" alt="Stephan's Quintet">
+            <picture>
+              <source
+                media="(max-width:600px)"
+                srcset="images/gallery/quintet300.webp"
+              />
+              <source
+                media="(max-width:1800px)"
+                srcset="images/gallery/quintet900.webp"
+              />
+              <img
+                src="images/gallery/quintet900.webp"
+                alt="Pillars of Creation"
+              />
+            </picture>
             <div class="image__text">Stephan's Quintet</div>
           </div>
           <div class="gallery__container--image">
-            <img src="images/gallery/neptune900.webp" 
-            srcset="images/gallery/neptune300.webp 300w, 
-            images/gallery/neptune900.webp 900w" loading="lazy" alt="Planet Neptune">
+
+            <picture>
+              <source
+                media="(max-width:600px)"
+                srcset="images/gallery/neptune300.webp"
+              />
+              <source
+                media="(max-width:1800px)"
+                srcset="images/gallery/neptune900.webp"
+              />
+              <img
+                src="images/gallery/neptune900.webp"
+                alt="Pillars of Creation"
+              />
+            </picture>
             <div class="image__text">Neptune</div>
           </div>
         </div>
@@ -301,8 +411,8 @@
       </div>
   </main>
   <section class="background">
-    <img class="background__front" src="images/background/background-front.webp" loading="lazy" alt="background"/>
-    <img class="background__back" src="images/background/background-back.webp" loading="lazy" alt="background" />
+    <img class="background__front" src="images/background/background-front.webp" alt="background"/>
+    <img class="background__back" src="images/background/background-back.webp" alt="background" />
   </section>
 </body>
 </html>

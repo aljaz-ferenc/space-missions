@@ -9,8 +9,9 @@
   &__image {
     @include flex-center;
     margin: 0 3rem;
+    width: 70%;
     img {
-      width: 70%;
+      width: 100%;
     }
   }
   &__text {
@@ -31,6 +32,10 @@
     position: relative;
     width: 100%;
     margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .year {
       position: absolute;
       top: 50%;
@@ -45,6 +50,10 @@
     position: relative;
     width: 100%;
     margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .year {
       top: 50%;
       position: absolute;
